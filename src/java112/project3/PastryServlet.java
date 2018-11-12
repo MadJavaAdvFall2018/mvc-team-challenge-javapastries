@@ -35,8 +35,17 @@ public class PastryServlet extends HttpServlet {
         Pastry yourPastry = new Pastry();
         String url = "/PastryJSP.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
 
-        //setting up attributes; TODO (Placeholder)
-        request.setAttribute();
+        //getting attributes; TODO - there's gotta be a way to loop this instead of manually writing it all out
+        Integer odAnswer = request.getAttribute("od");
+        Boolean nutsAnswer = request.getAttribute("nuts");
+        String flavorAnswer = request.getAttribute("flavor");
+
+        yourPastry.setOd(odAnswer);
+        yourPastry.setNuts(nutsAnswer);
+        yourPastry.setFlavor(flavorAnswer);
+
+        //setting up attributes; TODO (only a Placeholder)
+        request.setAttribute("yourPastry", yourPastry);
 
 
         //forwarding browser to output JSP (a forward since we don't want user to be able to bookmark this page)
