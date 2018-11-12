@@ -35,11 +35,12 @@ public class PastryServlet extends HttpServlet {
         Pastry yourPastry = new Pastry();
         String url = "/PastryJSP.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
 
-        //getting attributes; TODO - there's gotta be a way to loop this instead of manually writing it all out
+        //getting parameters; TODO - there's gotta be a way to loop this instead of manually writing it all out
         int odAnswer = Integer.parseInt(request.getParameter("od"));
         boolean nutsAnswer = Boolean.parseBoolean(request.getParameter("nuts"));
         String flavorAnswer = request.getParameter("flavor");
 
+        //setting parameter values into the instance variable fields
         yourPastry.setOd(odAnswer);
         yourPastry.setNuts(nutsAnswer);
         yourPastry.setFlavor(flavorAnswer);
