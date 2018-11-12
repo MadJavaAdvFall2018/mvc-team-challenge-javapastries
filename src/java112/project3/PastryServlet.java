@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @WebServlet(
         name = "PastryServlet",
-        urlPatterns = { "/Pastry", "/PastryServlet" }
+        urlPatterns = { "/Pastry", "/MVC-Challenge" }
 )
 
 /**
@@ -33,9 +33,9 @@ public class PastryServlet extends HttpServlet {
 
         //setting up variables for use
         Pastry yourPastry = new Pastry();
-        String url = "/PastryJSP.jsp";      //the URL to send/forward browser to
+        String url = "/PastryJSP.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
 
-        //setting up attributes
+        //setting up attributes; TODO (Placeholder)
         request.setAttribute();
 
 
