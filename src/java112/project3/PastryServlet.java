@@ -36,15 +36,15 @@ public class PastryServlet extends HttpServlet {
         String url = "/PastryJSP.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
 
         //getting attributes; TODO - there's gotta be a way to loop this instead of manually writing it all out
-        Integer odAnswer = request.getAttribute("od");
-        Boolean nutsAnswer = request.getAttribute("nuts");
-        String flavorAnswer = request.getAttribute("flavor");
+        int odAnswer = Integer.parseInt(request.getParameter("od"));
+        boolean nutsAnswer = Boolean.parseBoolean(request.getParameter("nuts"));
+        String flavorAnswer = request.getParameter("flavor");
 
         yourPastry.setOd(odAnswer);
         yourPastry.setNuts(nutsAnswer);
         yourPastry.setFlavor(flavorAnswer);
 
-        //setting up attributes; TODO (only a Placeholder)
+        //setting attribute; TODO: do we need more than just this? the instance variable is all we need, right?
         request.setAttribute("yourPastry", yourPastry);
 
 
