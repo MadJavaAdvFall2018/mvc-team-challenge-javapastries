@@ -17,7 +17,7 @@ import java.io.IOException;
  *  This servlet is the Controller for the "What Pastry Personality Are You?" application. It demonstrates use of
  *  MVC architecture and the flow between servlet (controller), JavaBean (model), and JSP (view). The "What Pastry
  *  Personality Are You?" app asks questions of the user and, based on the user response, determines the user's
- *  pastry personality, answering the age-old question "what kind of a pastry would if you were a pastry?".
+ *  pastry personality, answering the age-old question "what kind of a pastry would you be if you were a pastry?".
  */
 public class PastryServlet extends HttpServlet {
 
