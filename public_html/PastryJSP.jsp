@@ -30,7 +30,7 @@
                     required
                 />
                 <br>
-                <label for='OD1-2'>1-2 times</label>
+                <label for='OD12'>1-2 times</label>
                 <input
                     type='radio'
                     id='OD12'
@@ -46,10 +46,10 @@
                     value='35'
                 />
                 <br>
-                <label for='OD6+'>6+ times</label>
+                <label for='OD6'>6+ times</label>
                 <input
                     type='radio'
-                    id='OD0'
+                    id='OD6'
                     name='od'
                     value='6'
                 />
