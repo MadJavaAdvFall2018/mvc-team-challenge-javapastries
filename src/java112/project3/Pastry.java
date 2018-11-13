@@ -70,9 +70,9 @@ public class Pastry {
 
     public void choosePastry() {
         if (od == 0 || od == 12) {
-            chooseIntensePastry();
-        } else if (od == 35 || od == 6) {
             chooseMildPastry();
+        } else if (od == 35 || od == 6) {
+            chooseIntensePastry();
         }
     }
 
