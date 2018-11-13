@@ -57,8 +57,8 @@
             <br>
             <label for='nuts'>Are you Allergic to Nuts? </label>
             <select id='nuts'>
-                <option name='nutAllergy' value='true'>Yes</option>
-                <option name='nutAllergy' value='false'>No</option>
+                <option name='nuts' value='true'>Yes</option>
+                <option name='nuts' value='false'>No</option>
             </select>
             <br>
             <br>

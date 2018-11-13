@@ -33,7 +33,7 @@ public class PastryServlet extends HttpServlet {
 
         //setting up variables for use
         Pastry yourPastry = new Pastry();
-        String url = "/PastryJSP.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
+        String url = "/YourPastry.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
 
         //getting parameters; TODO - there's gotta be a way to loop this instead of manually writing it all out
         int odAnswer = Integer.parseInt(request.getParameter("od"));
