@@ -2,22 +2,12 @@ package java112.project3;
 
 public class Pastry {
 
-    private int od;
-    private boolean nuts;  //allergy
+    private int od; // overdose
+    private boolean nuts;  // allergy
     private String flavor;
     private String pastryName;
     private String pastryMessage;
-/*
-int od;  How many times have you overdosed on pastries in the past week? 0; 1-2; 3-5; 6+
-bool nuts; Are you allergic to nuts? y / n
-String flavor; cherry; ~apple~ lemon; chocolate; vanilla; (edited)
-
-OD: 0-2 whatever, 3+ Death By Chocolate,
-Nutallergy - whatever, no nut allergy whatever
-Flavors: one option each for no-OD, one for OD
-
-*/
-
+    private String pastryImage;
 
     /**
      * Empty constructor for Pastry object
@@ -79,9 +69,9 @@ Flavors: one option each for no-OD, one for OD
     }
 
     public void choosePastry() {
-        if (od > 2) {
+        if (od == 0 || od == 12) {
             chooseIntensePastry();
-        } else {
+        } else if (od == 35 || od == 6) {
             chooseMildPastry();
         }
     }
@@ -89,25 +79,33 @@ Flavors: one option each for no-OD, one for OD
     public void chooseIntensePastry() {
         if (flavor == "chocolate") {
             pastryName = "Death by Chocolate";
+            pastryImage = "<img href='images/death-by-chocolate-cake.jpg'>";
         } else if (flavor == "vanilla" ) {
-            pastryName = "Foot Long Eclair";
+            pastryName = "Mille Feuille";
+            pastryImage = "<img href='images/mille-feuille.jpg'>";
         } else if (flavor == "cherry" ) {
-            pastryName = "Mulled Cherry Bomb Pie";
+            pastryName = "Mulled Cherry Bomb Clafoutis";
             /* https://www.halfbakedharvest.com/mulled-cherry-bomb-pie/ */
+            pastryImage = "<img href='images/cherry-clafoutis.jpg'>";
         } else if (flavor == "lemon" ) {
-            pastryName = "Limoncello Lemon Bar";
+            pastryName = "Lemon Curd Pavlova";
+            pastryImage = "<img href='images/lemon-curd-pavlova.jpg'>";
         }
     }
 
     public void chooseMildPastry() {
         if (flavor == "chocolate") {
-            pastryName = "Baby Chocolate Puff";
+            pastryName = "Cupcake";
+            pastryImage = "<img href='images/choco-cupcake-vanilla.jpg'>";
         } else if (flavor == "vanilla" ) {
-            pastryName = "Sugar Cookie";
+            pastryName = "Cream Pufflet";
+            pastryImage = "<img href='images/vanilla-creampuff.jpg'>";
         } else if (flavor == "cherry" ) {
-            pastryName = "Mini Cherry Turnover";
+            pastryName = "Cherry Swiss Roll";
+            pastryImage = "<img href='images/swissroll-cherry.jpg'>";
         } else if (flavor == "lemon" ) {
-            pastryName = "Lemon Tartlet";
+            pastryName = "Lemon Meringue Pie Cup";
+            pastryImage = "<img href='images/lemon-meringue-pie-cups.jpg'>";
         }
     }
 
@@ -122,5 +120,4 @@ Flavors: one option each for no-OD, one for OD
         choosePastry();
         createMessage();
     }
-
 }
