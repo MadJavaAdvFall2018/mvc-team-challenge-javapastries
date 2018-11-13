@@ -48,7 +48,7 @@
                 <label for='OD6+'>6+ times</label>
                 <input
                     type='radio'
-                    id='OD0'
+                    id='OD6'
                     name='pastryOD'
                     value='6'
                 />
