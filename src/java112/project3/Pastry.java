@@ -77,33 +77,33 @@ public class Pastry {
     }
 
     public void chooseIntensePastry() {
-        if (flavor == "chocolate") {
+        if (flavor.equals("chocolate")) {
             pastryName = "Death by Chocolate";
             pastryImage = "<img href='images/death-by-chocolate-cake.jpg'>";
-        } else if (flavor == "vanilla" ) {
+        } else if (flavor.equals("vanilla")) {
             pastryName = "Mille Feuille";
             pastryImage = "<img href='images/mille-feuille.jpg'>";
-        } else if (flavor == "cherry" ) {
+        } else if (flavor.equals("cherry")) {
             pastryName = "Mulled Cherry Bomb Clafoutis";
             /* https://www.halfbakedharvest.com/mulled-cherry-bomb-pie/ */
             pastryImage = "<img href='images/cherry-clafoutis.jpg'>";
-        } else if (flavor == "lemon" ) {
+        } else if (flavor.equals("lemon")) {
             pastryName = "Lemon Curd Pavlova";
             pastryImage = "<img href='images/lemon-curd-pavlova.jpg'>";
         }
     }
 
     public void chooseMildPastry() {
-        if (flavor == "chocolate") {
+        if (flavor.equals("chocolate")) {
             pastryName = "Cupcake";
             pastryImage = "<img href='images/choco-cupcake-vanilla.jpg'>";
-        } else if (flavor == "vanilla" ) {
+        } else if (flavor.equals("vanilla")) {
             pastryName = "Cream Pufflet";
             pastryImage = "<img href='images/vanilla-creampuff.jpg'>";
-        } else if (flavor == "cherry" ) {
+        } else if (flavor.equals("cherry")) {
             pastryName = "Cherry Swiss Roll";
             pastryImage = "<img href='images/swissroll-cherry.jpg'>";
-        } else if (flavor == "lemon" ) {
+        } else if (flavor.equals("lemon")) {
             pastryName = "Lemon Meringue Pie Cup";
             pastryImage = "<img href='images/lemon-meringue-pie-cups.jpg'>";
         }

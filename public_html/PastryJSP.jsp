@@ -9,7 +9,7 @@
         <header>
             <h1>Hello and Welcome!</h1>
             <h2>We're here to tell you something about yourself.</h2>
-            <h3>Somthing you probably didn't know you needed to know.</h3>
+            <h3>Something you probably didn't know you needed to know.</h3>
             <h4>But you totally do.</h4>
             <h1>What kind of pastry you are!</h1>
             <h5>Just answer these easy questions! We promise we wont sell your data.</h5>
@@ -57,8 +57,8 @@
             <br>
             <label for='nuts'>Are you Allergic to Nuts? </label>
             <select id='nuts'>
-                <option name='nuts' value='true'>Yes</option>
-                <option name='nuts' value='false'>No</option>
+                <option name='nuts' value="True">Yes</option>
+                <option name='nuts' value="False">No</option>
             </select>
             <br>
             <br>

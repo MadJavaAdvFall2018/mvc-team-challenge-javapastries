@@ -31,6 +31,8 @@ public class PastryServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        response.setContentType("text/html");
+
         //setting up variables for use
         Pastry yourPastry = new Pastry();
         String url = "/YourPastry.jsp";      //TODO confirm the URL to send/forward browser to (with Gabe)
@@ -44,6 +46,9 @@ public class PastryServlet extends HttpServlet {
         yourPastry.setOd(odAnswer);
         yourPastry.setNuts(nutsAnswer);
         yourPastry.setFlavor(flavorAnswer);
+        log("###################################################" + odAnswer);
+        log("###################################################" + flavorAnswer);
+        yourPastry.run();
 
         //setting attribute; TODO: do we need more than just this? the instance variable is all we need, right?
         request.setAttribute("yourPastry", yourPastry);

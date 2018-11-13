@@ -12,8 +12,8 @@
         </header>
         <table>
             <tr><th colspan="2">${yourPastry.pastryName}</th></tr>
-            <%-- <tr><td colspan="2"><img src='${yourPastry.pastryImage}'></td</tr> --%>
-            <tr><td colspan="2">${yourPastry.pastryMessage}</td</tr>
+            <%-- <tr><td colspan="2">${yourPastry.pastryImage}</td></tr> --%>
+            <tr><td colspan="2">${yourPastry.pastryMessage}</td></tr>
             <tr><td>od</td><td>${yourPastry.od}</td><tr>
             <tr><td>nuts</td><td>${yourPastry.nuts}</td><tr>
             <tr><td>flavor</td><td>${yourPastry.flavor}</td><tr>
