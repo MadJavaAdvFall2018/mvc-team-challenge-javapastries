@@ -62,3 +62,5 @@ fabric.properties
 *.log
 .DS_Store
 .idea
+
+build.xml

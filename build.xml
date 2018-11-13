@@ -5,7 +5,7 @@
 
 <project default="deploy">
 
-  <property name="user_home" value="/home/student" />
+  <property name="user_home" value="/home/gsanna" />
   <property name="project_home" value="${user_home}/GitHubRepos/teamMVC" />
   <property name="tomcat" value="${user_home}/tomcat" />
   <property name="src" value="src"/>
@@ -48,35 +48,35 @@
 
   <target name="compile_analyzer" depends="init">
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" 
-           destdir="${build}/classes" 
-           extdirs="${lib}" 
-           verbose="false" 
-           excludes="*.jsp, 
-                     *.html, 
-                     *.xml, 
-                     java112/labs1/**, 
-                     java112/labs2/**, 
-                     java112/project2/**, 
+    <javac srcdir="${src}"
+           destdir="${build}/classes"
+           extdirs="${lib}"
+           verbose="false"
+           excludes="*.jsp,
+                     *.html,
+                     *.xml,
+                     java112/labs1/**,
+                     java112/labs2/**,
+                     java112/project2/**,
                      java112/tests/**,
                      java112/demos/**"
-           deprecation="on" 
-           debug="on" 
+           deprecation="on"
+           debug="on"
            includeAntRuntime="false" />
   </target>
 
   <target name="compile_labs" depends="init">
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" 
-           destdir="${build}/classes" 
-           extdirs="${lib}" 
-           verbose="false" 
+    <javac srcdir="${src}"
+           destdir="${build}/classes"
+           extdirs="${lib}"
+           verbose="false"
            excludes="*.jsp,*.html,*.xml, java112/analyzer/**, java112/tests/**, java112/demo/**"
-           deprecation="on" 
-           debug="on" 
+           deprecation="on"
+           debug="on"
            includeAntRuntime="false" />
   </target>
-  
+
   <target name="compile_demos" depends="init">
       <!-- Compile the java code from ${src} into ${build} -->
       <javac srcdir="${src}"
@@ -100,14 +100,14 @@
       <fileset dir="${build}/classes" excludes="${build}/classes/java112/tests/**" />
     </jar>
   </target>
-  
+
   <target name="build_demos" depends="clean, compile_demos">
       <jar destfile="lib/java112Demos.jar">
           <fileset dir="${build}/classes"
           excludes="${build}/classes/java112/tests/**" />
       </jar>
   </target>
-  
+
   <target name="compile_web" depends="clean, init">
     <javac srcdir="${src}"
       destdir="${web_classes}"
@@ -171,7 +171,7 @@
   <target name="deploy" depends="dist">
     <copy file="${dist}/java112.war" todir="${tomcat}/webapps"/>
   </target>
-  
+
  <!--########################################################################
     |   jdoc - Generates JavaDoc                                               |
     #########################################################################-->
@@ -193,7 +193,7 @@
          compression="gzip"
       basedir="${project_home}"
     />
-        
+
 
   </target>
 
@@ -319,7 +319,7 @@
       <test name="java112.tests.TokenCountAnalyzerProcessTokenTest" />
     </junit>
   </target>
-  
+
   <target name="run_tests_analyzer1">
       <junit printsummary="yes" fork="yes" haltonfailure="no">
           <classpath>
