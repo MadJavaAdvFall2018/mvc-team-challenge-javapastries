@@ -18,5 +18,6 @@
             <tr><td>nuts</td><td>${yourPastry.nuts}</td><tr>
             <tr><td>flavor</td><td>${yourPastry.flavor}</td><tr>
         </table>
+        <p><a href="PastryJSP.jsp">Check multiple personalities...</a></p>
     </body>
 </html>
