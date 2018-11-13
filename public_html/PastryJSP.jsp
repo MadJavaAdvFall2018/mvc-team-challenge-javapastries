@@ -27,6 +27,7 @@
                     id='OD0'
                     name='od'
                     value='0'
+                    required
                 />
                 <br>
                 <label for='OD1-2'>1-2 times</label>
