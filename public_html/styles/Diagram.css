@@ -1,0 +1,32 @@
+body
+{
+  background-image: url('../images/pastryWallpaper.jpg');
+  background-repeat: repeat;
+}
+
+div
+{
+  background-color: #354261e0;
+  border-radius: 1em;
+  margin: auto;
+  padding: 3em;
+  width: 30em;
+}
+
+img
+{
+  width: 100%;
+}
+
+a
+{
+  display: block;
+  text-align: center;
+}
+
+a, a:hover, a:focus
+{
+  color: DodgerBlue;
+  font-size: 3em;
+  text-decoration: none;
+}

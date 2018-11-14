@@ -46,8 +46,6 @@ public class PastryServlet extends HttpServlet {
         yourPastry.setOd(odAnswer);
         yourPastry.setNuts(nutsAnswer);
         yourPastry.setFlavor(flavorAnswer);
-        log("###################################################" + odAnswer);
-        log("###################################################" + flavorAnswer);
         yourPastry.run();
 
         //setting attribute; TODO: do we need more than just this? the instance variable is all we need, right?

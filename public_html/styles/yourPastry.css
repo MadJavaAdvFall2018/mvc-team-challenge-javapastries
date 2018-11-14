@@ -1,10 +1,20 @@
 table {
-    background-color: ivory;
-    width: 80%;
+    background-color: #354261e0;
+    border-radius: 1em;
+    color: antiquewhite;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    width: 80%;
 }
 
 th, td {
     padding: 15px;
+}
+
+a, a:hover, a:focus
+{
+  color: DodgerBlue;
+  font-size: 3em;
+  text-decoration: none;
 }

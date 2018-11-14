@@ -56,18 +56,18 @@
             </fieldset>
             <br>
             <label for='nuts'>Are you Allergic to Nuts? </label>
-            <select id='nuts'>
-                <option name='nuts' value="True">Yes</option>
-                <option name='nuts' value="False">No</option>
+            <select id='nuts' name='nuts'>
+                <option value="True">Yes</option>
+                <option value="False">No</option>
             </select>
             <br>
             <br>
             <label for='flavor'>Pick a flavor:  </label>
-            <select id='flavor'>
-                <option name='flavor' value='cherry'>Cherry</option>
-                <option name='flavor' value='lemon'>Lemon</option>
-                <option name='flavor' value='chocolate'>Chocolate</option>
-                <option name='flavor' value='vanilla'>Vanilla</option>
+            <select id='flavor' name='flavor'>
+                <option value='cherry'>Cherry</option>
+                <option value='lemon'>Lemon</option>
+                <option value='chocolate'>Chocolate</option>
+                <option value='vanilla'>Vanilla</option>
             </select>
             <br>
             <br>

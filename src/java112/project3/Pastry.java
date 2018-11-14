@@ -110,7 +110,7 @@ public class Pastry {
     }
 
     public void createMessage() {
-        pastryMessage = "Sweet - your pastry personality is:" + pastryName + "!";
+        pastryMessage = "Sweet - your pastry personality is: " + pastryName + "!";
         if (nuts) {
             pastryMessage += "\n Always fun, never nuts!";
         }
