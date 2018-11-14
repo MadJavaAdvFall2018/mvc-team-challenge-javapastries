@@ -17,6 +17,15 @@ th, td {
     padding: 15px;
 }
 
+.right {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.left {
+    text-align: left;
+}
+
 a, a:hover, a:focus
 {
   color: DodgerBlue;
