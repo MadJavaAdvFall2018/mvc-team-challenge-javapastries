@@ -8,6 +8,11 @@ table {
     width: 80%;
 }
 
+img
+{
+  width: 20em;
+}
+
 th, td {
     padding: 15px;
 }
@@ -15,6 +20,6 @@ th, td {
 a, a:hover, a:focus
 {
   color: DodgerBlue;
-  font-size: 3em;
+  font-size: 2em;
   text-decoration: none;
 }

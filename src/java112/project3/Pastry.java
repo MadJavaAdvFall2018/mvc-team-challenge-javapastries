@@ -68,6 +68,10 @@ public class Pastry {
         this.pastryMessage = pastryMessage;
     }
 
+    public String getPastryImage() {
+        return pastryImage;
+    }
+
     public void choosePastry() {
         if (od == 0 || od == 12) {
             chooseMildPastry();
@@ -79,33 +83,33 @@ public class Pastry {
     public void chooseIntensePastry() {
         if (java.util.Objects.equals(flavor, "chocolate")) {
             pastryName = "Death by Chocolate";
-            pastryImage = "<img href='images/death-by-chocolate-cake.jpg'>";
+            pastryImage = "<img src='images/death-by-chocolate-cake.jpg'>";
         } else if (java.util.Objects.equals(flavor, "vanilla")) {
             pastryName = "Mille Feuille";
-            pastryImage = "<img href='images/mille-feuille.jpg'>";
+            pastryImage = "<img src='images/mille-feuille.jpg'>";
         } else if (java.util.Objects.equals(flavor, "cherry")) {
             pastryName = "Mulled Cherry Bomb Clafoutis";
             /* https://www.halfbakedharvest.com/mulled-cherry-bomb-pie/ */
-            pastryImage = "<img href='images/cherry-clafoutis.jpg'>";
+            pastryImage = "<img src='images/cherry-clafoutis.jpg'>";
         } else if (java.util.Objects.equals(flavor, "lemon")) {
             pastryName = "Lemon Curd Pavlova";
-            pastryImage = "<img href='images/lemon-curd-pavlova.jpg'>";
+            pastryImage = "<img src='images/lemon-curd-pavlova.jpg'>";
         }
     }
 
     public void chooseMildPastry() {
         if (java.util.Objects.equals(flavor, "chocolate")) {
             pastryName = "Cupcake";
-            pastryImage = "<img href='images/choco-cupcake-vanilla.jpg'>";
+            pastryImage = "<img src='images/choco-cupcake-vanilla-frosting.jpg'>";
         } else if (java.util.Objects.equals(flavor, "vanilla")) {
             pastryName = "Cream Pufflet";
-            pastryImage = "<img href='images/vanilla-creampuff.jpg'>";
+            pastryImage = "<img src='images/vanilla-creampuff.jpg'>";
         } else if (java.util.Objects.equals(flavor, "cherry")) {
             pastryName = "Cherry Swiss Roll";
-            pastryImage = "<img href='images/swissroll-cherry.jpg'>";
+            this.pastryImage = "<img src='images/swissroll-cherry.jpg'>";
         } else if (java.util.Objects.equals(flavor, "lemon")) {
             pastryName = "Lemon Meringue Pie Cup";
-            pastryImage = "<img href='images/lemon-meringue-pie-cups.jpg'>";
+            pastryImage = "<img src='images/lemon-meringue-pie-cups.jpg'>";
         }
     }
 
